@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Kiểm Tra Ngữ Pháp Tiếng Anh (20 Câu)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .user-info {
+            background-color: #eef2f7;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 25px;
+        }
+        .user-info label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .user-info input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .question {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .question p {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+        .options input[type="radio"] {
+            margin-right: 10px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #result {
+            display: none;
+            margin-top: 25px;
+            padding: 20px;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>BÀI KIỂM TRA NGỮ PHÁP TIẾNG ANH</h1>
+    
+    <form id="quizForm">
+        <!-- Thông tin học sinh -->
+        <div class="user-info">
+            <label for="fullName">Họ và tên học sinh:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Nhập đầy đủ họ và tên học sinh..." required>
+        </div>
+
+        <!-- Câu 1 -->
+        <div class="question">
+            <p>1. Many families move to suburban areas for quieter environments. Local councils aim to build more parks and schools. Having carefully studied community needs, ________.</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="A"> A. new policies were created by the board</label>
+                <label><input type="radio" name="q1" value="B"> B. the local council approved a modern park project</label>
+                <label><input type="radio" name="q1" value="C"> C. recreational spaces became popular</label>
+                <label><input type="radio" name="q1" value="D"> D. better facilities were required</label>
+            </div>
+        </div>
+
+        <!-- Câu 2 -->
+        <div class="question">
+            <p>2. Noise pollution affects many workers in open offices. Excessive noise reduces concentration and increases stress. Exposed to loud sounds for hours, ________.</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="A"> A. health problems appear in office workers</label>
+                <label><input type="radio" name="q2" value="B"> B. many employees suffer from severe headaches</label>
+                <label><input type="radio" name="q2" value="C"> C. workplace productivity drops significantly</label>
+                <label><input type="radio" name="q2" value="D"> D. stressful conditions harm employee well-being</label>
+            </div>
+        </div>
+
+        <!-- Câu 3 -->
+        <div class="question">
+            <p>3. Modern navigation apps help drivers avoid traffic jams. Systems process real-time road data to suggest fast routes. Trained on daily traffic patterns, ________.</p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="A"> A. quick route suggestions are generated by the app</label>
+                <label><input type="radio" name="q3" value="B"> B. driving time decreases noticeably</label>
+                <label><input type="radio" name="q3" value="C"> C. the smart app guides drivers smoothly</label>
+                <label><input type="radio" name="q3" value="D"> D. major traffic delays are avoided</label>
+            </div>
+        </div>
+
+        <!-- Câu 4 -->
+        <div class="question">
+            <p>4. Flexible working helps parents balance job and home life. Managers often talk to staff about their working hours. __________ after interviewing all team members, the manager finished the report.</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="A"> A. Exhausting</label>
+                <label><input type="radio" name="q4" value="B"> B. Exhausted</label>
+                <label><input type="radio" name="q4" value="C"> C. Being exhausted</label>
+                <label><input type="radio" name="q4" value="D"> D. Having exhausted</label>
+            </div>
+        </div>
+
+        <!-- Câu 5 -->
+        <div class="question">
+            <p>5. Household waste increases rapidly during holiday seasons. Local authorities encourage residents to recycle paper and plastic. Driven by environmental awareness, ________.</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="A"> A. many families sort their trash every week</label>
+                <label><input type="radio" name="q5" value="B"> B. recycling centers become very busy</label>
+                <label><input type="radio" name="q5" value="C"> C. cleaner neighborhoods are created</label>
+                <label><input type="radio" name="q5" value="D"> D. waste management costs rise</label>
+            </div>
+        </div>
+
+        <!-- Câu 6 -->
+        <div class="question">
+            <p>6. Smart watch sensors monitor daily physical activity easily. Users check these devices to track their heart rates. __________ with advanced sensors, the new watch alerts users to health changes.</p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="A"> A. Analyzing</label>
+                <label><input type="radio" name="q6" value="B"> B. Analyzed</label>
+                <label><input type="radio" name="q6" value="C"> C. Having analyzed</label>
+                <label><input type="radio" name="q6" value="D"> D. To analyze</label>
+            </div>
+        </div>
+
+        <!-- Câu 7 -->
+        <div class="question">
+            <p>7. Skipping breakfast negatively affects children's focus at school. Nutritionists encourage families to eat healthy meals daily. __________ of the risks of poor nutrition, parents prepare healthy meals.</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="A"> A. Warned</label>
+                <label><input type="radio" name="q7" value="B"> B. Warning</label>
+                <label><input type="radio" name="q7" value="C"> C. Having warned</label>
+                <label><input type="radio" name="q7" value="D"> D. To warn</label>
+            </div>
+        </div>
+
+        <!-- Câu 8 -->
+        <div class="question">
+            <p>8. Family photos help people preserve memorable life moments. Photography clubs host workshops to teach editing skills. The picture __________ by my grandfather fifty years ago remains beautiful.</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="A"> A. taking</label>
+                <label><input type="radio" name="q8" value="B"> B. was taken</label>
+                <label><input type="radio" name="q8" value="C"> C. taken</label>
+                <label><input type="radio" name="q8" value="D"> D. to take</label>
+            </div>
+        </div>
+
+        <!-- Câu 9 -->
+        <div class="question">
+            <p>9. Online shopping apps help consumers compare prices quickly. Users hope these platforms offer genuine products. The shopping app __________ on app stores last week received good reviews.</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="A"> A. launching</label>
+                <label><input type="radio" name="q9" value="B"> B. was launched</label>
+                <label><input type="radio" name="q9" value="C"> C. which launched</label>
+                <label><input type="radio" name="q9" value="D"> D. launched</label>
+            </div>
+        </div>
+
+        <!-- Câu 10 -->
+        <div class="question">
+            <p>10. Language centers offer conversational courses for young children. Parents must submit registration forms before classes start. Children __________ to join the summer class must sign up early.</p>
+            <div class="options">
+                <label><input type="radio" name="q10" value="A"> A. who wants</label>
+                <label><input type="radio" name="q10" value="B"> B. wanting</label>
+                <label><input type="radio" name="q10" value="C"> C. wanted</label>
+                <label><input type="radio" name="q10" value="D"> D. is wanting</label>
+            </div>
+        </div>
+
+        <!-- Câu 11 -->
+        <div class="question">
+            <p>11. Wooden furniture easily deteriorates in humid weather. Homeowners use protective oils to keep wood durable. The wooden table __________ with waterproof oil lasts for decades.</p>
+            <div class="options">
+                <label><input type="radio" name="q11" value="A"> A. treating</label>
+                <label><input type="radio" name="q11" value="B"> B. was treated</label>
+                <label><input type="radio" name="q11" value="C"> C. to treat</label>
+                <label><input type="radio" name="q11" value="D"> D. treated</label>
+            </div>
+        </div>
+
+        <!-- Câu 12 -->
+        <div class="question">
+            <p>12. Local markets offer fresh vegetables from nearby farms. Shoppers visit morning markets to get quality ingredients. The organic market __________ near the town square attracts many locals.</p>
+            <div class="options">
+                <label><input type="radio" name="q12" value="A"> A. locating</label>
+                <label><input type="radio" name="q12" value="B"> B. located</label>
+                <label><input type="radio" name="q12" value="C"> C. was located</label>
+                <label><input type="radio" name="q12" value="D"> D. to locate</label>
+            </div>
+        </div>
+
+        <!-- Câu 13 -->
+        <div class="question">
+            <p>13. Solar lighting is becoming popular in home gardens. Many homeowners install small panels to save electricity costs. The lighting system __________ in our garden works very efficiently.</p>
+            <div class="options">
+                <label><input type="radio" name="q13" value="A"> A. installing</label>
+                <label><input type="radio" name="q13" value="B"> B. was installed</label>
+                <label><input type="radio" name="q13" value="C"> C. to install</label>
+                <label><input type="radio" name="q13" value="D"> D. installed</label>
+            </div>
+        </div>
+
+        <!-- Câu 14 -->
+        <div class="question">
+            <p>14. Modern coffee shops use automatic machines to serve customers fast. Shop managers train staff to operate smart coffee makers. The machines __________ by local technicians function perfectly.</p>
+            <div class="options">
+                <label><input type="radio" name="q14" value="A"> A. maintaining</label>
+                <label><input type="radio" name="q14" value="B"> B. were maintained</label>
+                <label><input type="radio" name="q14" value="C"> C. maintained</label>
+                <label><input type="radio" name="q14" value="D"> D. to maintain</label>
+            </div>
+        </div>
+
+        <!-- Câu 15 -->
+        <div class="question">
+            <p>15. Distance learning allows adults to learn new skills at home. Flexible schedules suit busy working schedules. __________ provided clear insights into home learning habits.</p>
+            <div class="options">
+                <label><input type="radio" name="q15" value="A"> A. What the research team published in the report</label>
+                <label><input type="radio" name="q15" value="B"> B. That the research team published in the report</label>
+                <label><input type="radio" name="q15" value="C"> C. Which published in the report by the research team</label>
+                <label><input type="radio" name="q15" value="D"> D. Whatever did the research team publish</label>
+            </div>
+        </div>
+
+        <!-- Câu 16 -->
+        <div class="question">
+            <p>16. Eating out often is convenient but can be expensive. Many families struggle to balance meal budgets. __________ remains a major concern for young couples.</p>
+            <div class="options">
+                <label><input type="radio" name="q16" value="A"> A. How can daily food expenses be managed wisely</label>
+                <label><input type="radio" name="q16" value="B"> B. That how daily food expenses can be managed wisely</label>
+                <label><input type="radio" name="q16" value="C"> C. How daily food expenses can be managed wisely</label>
+                <label><input type="radio" name="q16" value="D"> D. Which daily food expenses can be managed wisely</label>
+            </div>
+        </div>
+
+        <!-- Câu 17 -->
+        <div class="question">
+            <p>17. Parental controls limit screen time on children's devices. Educational apps help children learn through interactive games. __________ depends heavily on parental guidance.</p>
+            <div class="options">
+                <label><input type="radio" name="q17" value="A"> A. Whether children develop healthy digital habits</label>
+                <label><input type="radio" name="q17" value="B"> B. That children develop healthy digital habits</label>
+                <label><input type="radio" name="q17" value="C"> C. If children develop healthy digital habits</label>
+                <label><input type="radio" name="q17" value="D"> D. What children develop healthy digital habits</label>
+            </div>
+        </div>
+
+        <!-- Câu 18 -->
+        <div class="question">
+            <p>18. Smart home systems adjust room temperatures automatically. Companies test these smart devices in real apartments. House owners will check __________ before setting up the system.</p>
+            <div class="options">
+                <label><input type="radio" name="q18" value="A"> A. whatever safety features provided by makers</label>
+                <label><input type="radio" name="q18" value="B"> B. what safety features were provided by makers</label>
+                <label><input type="radio" name="q18" value="C"> C. whichever safety features are provided by makers</label>
+                <label><input type="radio" name="q18" value="D"> D. that safety features provided by makers</label>
+            </div>
+        </div>
+
+        <!-- Câu 19 -->
+        <div class="question">
+            <p>19. Traditional recipes are passed down through generations. Chefs record family cooking steps to preserve culinary culture. __________ amazed all young culinary students.</p>
+            <div class="options">
+                <label><input type="radio" name="q19" value="A"> A. Why these traditional recipes survived for centuries</label>
+                <label><input type="radio" name="q19" value="B"> B. That why these traditional recipes survived for centuries</label>
+                <label><input type="radio" name="q19" value="C"> C. Which these traditional recipes survived for centuries</label>
+                <label><input type="radio" name="q19" value="D"> D. These traditional recipes survived for centuries</label>
+            </div>
+        </div>
+
+        <!-- Câu 20 -->
+        <div class="question">
+            <p>20. Food inspectors check food hygiene in local restaurants. Inspectors examine kitchen areas carefully to ensure safety. The manager denied __________ during the inspection.</p>
+            <div class="options">
+                <label><input type="radio" name="q20" value="A"> A. that the inspector had reported</label>
+                <label><input type="radio" name="q20" value="B"> B. which reported by the inspector</label>
+                <label><input type="radio" name="q20" value="C"> C. whatever was reporting by the inspector</label>
+                <label><input type="radio" name="q20" value="D"> D. what the inspector had reported</label>
+            </div>
+        </div>
+
+        <button type="submit" id="submitBtn">Nộp Bài</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script>
+    // Đáp án đúng của 20 câu
+    const answers = {
+        q1: 'B', q2: 'B', q3: 'C', q4: 'B', q5: 'A',
+        q6: 'B', q7: 'A', q8: 'C', q9: 'D', q10: 'B',
+        q11: 'D', q12: 'B', q13: 'D', q14: 'C', q15: 'A',
+        q16: 'C', q17: 'A', q18: 'B', q19: 'A', q20: 'D'
+    };
+
+    document.getElementById('quizForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Ngăn trình duyệt reload trang
+
+        const studentName = document.getElementById('fullName').value.trim();
+        if (!studentName) {
+            alert('Vui lòng nhập họ và tên học sinh!');
+            return;
+        }
+
+        let score = 0;
+        const total = Object.keys(answers).length;
+
+        // Tính điểm dựa trên lựa chọn
+        for (let i = 1; i <= total; i++) {
+            const qName = 'q' + i;
+            const selected = document.querySelector(`input[name="${qName}"]:checked`);
+            if (selected && selected.value === answers[qName]) {
+                score++;
+            }
+        }
+
+        // Hiển thị kết quả
+        const resultDiv = document.getElementById('result');
+        const points = (score / total) * 10;
+        resultDiv.style.display = 'block';
+        resultDiv.innerHTML = `
+            Chúc mừng học sinh: <strong>${studentName}</strong>!<br>
+            Bạn đã làm đúng <strong>${score}/${total}</strong> câu.<br>
+            Điểm số của bạn: <strong>${points.toFixed(1)} / 10 điểm</strong>
+        `;
+
+        // Khóa các nút chọn sau khi nộp
+        const inputs = document.querySelectorAll('input');
+        inputs.forEach(input => input.disabled = true);
+        document.getElementById('submitBtn').disabled = true;
+        document.getElementById('submitBtn').innerText = 'Đã Nộp Bài';
+        document.getElementById('submitBtn').style.backgroundColor = '#6c757d';
+    });
+</script>
+
+</body>
+</html>
